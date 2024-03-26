@@ -1,0 +1,32 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  24. BREADCRUMB CSS START
+/*----------------------------------------*/
+
+.tp-about {
+    position: relative;
+}
+.tp-about img {
+    width: 100%;
+}
+
+.tp-about-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    text-align: center;
+    // transform: translateY(-50%);
+    transition: .3s;
+}
+.tp-about-content h3 {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.tp-about-content p {
+    color: #fff;
+    font-size: 20px;
+}

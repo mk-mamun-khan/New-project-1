@@ -1,0 +1,80 @@
+@use '../utils' as *;
+
+.tp-big-text {
+    font-size: 160px;
+    color: transparent;
+    -webkit-text-stroke: 1px #f4f4f4;
+    position: absolute;
+    top: -77px;
+    left: -40px;
+    z-index: -1;
+    @media #{$xs} {
+        font-size: 90px;
+        top: -49px;
+    }
+}
+
+.testimonial-area{
+    .tp-big-text{
+        @media #{$xs} {
+            font-size: 70px;
+            top: -49px;
+        }
+    }
+}
+
+.text-center {
+    & .tp-big-text {
+        z-index: -1;
+        right: 0;
+    }
+}
+
+.tp-cection-box {
+    .price-big-text {
+        z-index: 1;
+        -webkit-text-stroke: 1px #2c2c2c;
+    }
+}
+.tp-cection-box {
+    .test-big-text {
+        z-index: 1;
+        -webkit-text-stroke: 1px #ededed;
+    }
+}
+.tp-cection-box {
+    .brand-big-text {
+        z-index: 1;
+        -webkit-text-stroke: 1px #323232;
+    }
+}
+
+.tp-cection-box {
+    & h2 {
+        font-size: 60px;
+        color: var(--tp-heading-1);
+        font-weight: var(--tp-fw-bold);
+        z-index: 2;
+        position: relative;
+        @media #{$lg} {
+            font-size: 42px;
+        }
+        @media #{$xs} {
+            font-size: 32px;
+        }
+    }
+
+    & span.tp-cection-subtitle {
+        background: var(--tp-theme-1);
+        color: var(--tp-common-white);
+        padding: 3px 10px;
+        text-transform: uppercase;
+        z-index: 2;
+        position: relative;
+    }
+}
+.tp-white h2 {
+    color: var(--tp-common-white);
+    z-index: 2;
+    position: relative;
+}

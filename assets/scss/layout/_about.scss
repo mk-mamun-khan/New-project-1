@@ -1,0 +1,128 @@
+@use '../utils' as *;
+
+img.tp-sm {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img.tp-lg {
+    margin-left: 30px;
+    @media #{$xs} {
+        margin-left: 0;
+    }
+}
+.tp-about-wrapper{
+    @media #{$xs} {
+        padding-left: 0;
+    }
+}
+
+.tp-offer-section {
+    width: 200px;
+    height: 200px;
+    background: var(--tp-theme-1);
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 70px;
+    bottom: 35px;
+
+    @media #{$lg} {
+        right: -50px;
+        bottom: 30px;
+    }
+
+    @media #{$md} {
+        right: 140px;
+    }
+
+    & span.tp-title {
+        font-size: 18px;
+        color: var(--tp-common-white);
+        font-weight: var(--tp-fw-bold);
+        line-height: 90px;
+    }
+
+    & span.tp-offer {
+        font-size: 80px;
+        color: var(--tp-common-white);
+        font-weight: var(--tp-fw-bold);
+
+        & span.tp-pointer {
+            font-size: 20px;
+        }
+    }
+
+    & span {
+        color: var(--tp-common-white);
+        font-size: 14px;
+    }
+
+}
+
+.tp-about-thumb {
+    &:after {
+        width: 20px;
+        height: 20px;
+        content: "";
+        position: absolute;
+        top: 100px;
+        right: 80px;
+        background: var(--tp-theme-1);
+
+        @media #{$lg} {
+            top: 140px;
+            right: -30px;
+        }
+
+        @media #{$md} {
+            right: 150px;
+        }
+    }
+}
+
+.tp-arrow-section {
+    width: 60px;
+    height: 60px;
+    background: var(--tp-common-white);
+    line-height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 13.106px -9.177px 32px 0px rgba(0, 0, 0, 0.06);
+
+    & a {
+        font-size: 18px;
+        color: var(--tp-heading-1);
+    }
+}
+
+.tp-ab-meta-text {
+    @media #{$lg,$md} {
+        padding: 0;
+    }
+    @media #{$xs} {
+        padding-left: 0;
+    }
+
+    & h4 {
+        color: var(--tp-heading-1);
+        font-weight: normal;
+
+        @media #{$xl,$lg} {
+            font-size: 18px;
+        }
+    }
+
+    & span {
+        color: var(--tp-heading-1);
+
+        & i {
+            font-style: normal;
+            color: var(--tp-theme-1);
+        }
+    }
+}
